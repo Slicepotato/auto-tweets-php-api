@@ -48,8 +48,8 @@ function userHomeRT($tweet, $qu = "@fxstareu", $like = 1, $rt = 1, $cnt = 10){
 userHomeRT($tweet, "@qflashpl", 5);
 
 // Send tweet
-$tweet->post('statuses/update', array('status' => '💚 #qflashpl http://qflash.pl 😍 http://qflash.pl/qflash-pl') );
-
+// $tweet->post('statuses/update', array('status' => '💚 #qflashpl http://qflash.pl 😍 http://qflash.pl/qflash-pl') );
+$tweet->post('statuses/update', array('status' => 'Komunikator internetowy 💚 #qflashpl http://qflash.pl 😍 http://qflash.pl/qflash-pl '.date('Y-m-d H',time()) ) );
 echo "<br>Works fine :)";
 
 }catch(Exception $e){

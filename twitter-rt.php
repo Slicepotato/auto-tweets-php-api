@@ -9,9 +9,12 @@ $consumerKey    = '';
 $consumerSecret = '';
 $oAuthToken     = '';
 $oAuthSecret    = '';
+	
 
 # API OAuth
-require_once('twitteroauth.php');
+$dir = dirname("__FILE__");
+require_once($dir.'/twitteroauth.php');
+
 
 $tweet = new TwitterOAuth($consumerKey, $consumerSecret, $oAuthToken, $oAuthSecret);
 

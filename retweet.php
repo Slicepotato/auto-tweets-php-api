@@ -23,7 +23,7 @@ $tweet = new TwitterOAuth($consumerKey, $consumerSecret, $oAuthToken, $oAuthSecr
 // Szukaj posty użytkownika i polub jego posty i retweetuj
 // Search homeline and like or retweet posts
 // cnt - how many posts
-function userHomeRT($tweet, $qu = "@fxstareu", $like = 1, $rt = 1, $cnt = 10){
+function userHomeRT($tweet, $qu = "@qflash", $like = 1, $rt = 1, $cnt = 10){
 	$x = $tweet->get('statuses/home_timeline', array('screen_name' => $qu, 'count' => $cnt));
 	$a = json_decode($x, true);
 	echo "<pre>";

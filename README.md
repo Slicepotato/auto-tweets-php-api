@@ -1,5 +1,4 @@
 # README #
-
 Twitter PHP API 
 
 Examples-twitter-php-api.php

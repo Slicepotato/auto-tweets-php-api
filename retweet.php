@@ -59,5 +59,4 @@ echo "<br>Works fine :)";
 	echo '<br>';
 	echo $e->getMessage();
 }
-
 ?>
